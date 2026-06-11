@@ -41,6 +41,7 @@ Copiadas para `~/.claude/skills/`, onde carregam automaticamente. Selecionadas p
 | **video-editor-remotion** | Pipeline de vídeo 100% Remotion — renderiza o MP4 final sem editor externo. |
 | **clone-website** | Engenharia reversa e clone de sites seção por seção. |
 | **impeccable** | Design/review/polish de interfaces frontend. |
+| **notebooklm** | API completa do Google NotebookLM — cria notebooks, fontes, podcasts e demais artefatos via API. |
 
 ## Por que os essenciais não estão neste repo
 
@@ -58,7 +59,8 @@ claude-code-starter-pack/
     ├── canva-presentation/
     ├── video-editor-remotion/
     ├── clone-website/
-    └── impeccable/
+    ├── impeccable/
+    └── notebooklm/
 ```
 
 ## Instalação manual (sem o script)
