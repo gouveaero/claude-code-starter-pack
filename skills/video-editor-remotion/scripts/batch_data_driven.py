@@ -7,9 +7,9 @@ Each row in the input file becomes one render with that row's fields passed as
 each render gets its own duration, title, brand color, etc.
 
 Use cases:
-  - 50 Vhoe reels from aeronaves.csv (one per aircraft)
-  - 20 TriboTax reels from precedentes.csv (one per legal precedent)
-  - 100 Telesapiens reels from cursos.csv (one per course)
+  - 50 aviation reels from aeronaves.csv (one per aircraft)
+  - 20 tax-law reels from precedentes.csv (one per legal precedent)
+  - 100 course reels from cursos.csv (one per course)
 
 Usage:
     python3 batch_data_driven.py \\

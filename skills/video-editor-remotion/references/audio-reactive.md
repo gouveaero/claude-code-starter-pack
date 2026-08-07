@@ -4,8 +4,8 @@ Drive overlay animations from the audio waveform itself — narration TTS, music
 
 ## When to use
 
-- **Vhoe**: engine-frequency bars during cockpit shots
-- **Telesapiens / TriboTax**: narration-driven waveform for podcast-style reels
+- **Aviation**: engine-frequency bars during cockpit shots
+- **Education / legal**: narration-driven waveform for podcast-style reels
 - **Music videos**: full-spectrum visualization
 
 ## Setup

@@ -1,6 +1,6 @@
 # Overlay Density — Minimum Requirements
 
-**Feedback TriboTax 2026-05-12:** "poucos overlays no atual" e "mais fullscreen com animação cobrindo tela inteira nos momentos-chave."
+**Feedback de cliente, 2026-05-12:** "poucos overlays no atual" e "mais fullscreen com animação cobrindo tela inteira nos momentos-chave."
 
 ## Regras de densidade
 
@@ -30,7 +30,7 @@ Se (1) banco local e (2) Wikimedia/bibliotecas não cobrem o visual desejado, **
 > "Para o overlay X precisamos de uma imagem de [descrição detalhada — estilo, composição, fundo preferido escuro ou branco, elementos principais]. Você consegue gerar?"
 
 Gabriel usa ferramentas de geração de imagem (Midjourney, Flux, etc.). Os PNGs gerados devem:
-- Ir para `/Users/gabriel/Documents/PNGS PARA EDICAO/<categoria>/`
+- Ir para `~/Documents/PNGS PARA EDICAO/<categoria>/`
 - Ser copiados para `<remotion>/public/icons/`
 - Ser documentados no `INDEX.md`
 
@@ -38,7 +38,7 @@ Gabriel usa ferramentas de geração de imagem (Midjourney, Flux, etc.). Os PNGs
 
 **Antes de QUALQUER `rich_overlay` que envolva figura/ícone/objeto reconhecível, siga esta ordem rígida:**
 
-1. **PNG local primeiro** — `/Users/gabriel/Documents/PNGS PARA EDICAO/` (232 ícones, 9 categorias). Ler `INDEX.md` integralmente. Buscar por keywords semânticas (`balanca`, `justi`, `estatua`, `busto`, `dinheiro`, `doc`, `mao`). Copiar pra `<remotion>/public/icons/` e usar via `<Img src={staticFile('icons/<id>.png')} />`.
+1. **PNG local primeiro** — `~/Documents/PNGS PARA EDICAO/` (232 ícones, 9 categorias). Ler `INDEX.md` integralmente. Buscar por keywords semânticas (`balanca`, `justi`, `estatua`, `busto`, `dinheiro`, `doc`, `mao`). Copiar pra `<remotion>/public/icons/` e usar via `<Img src={staticFile('icons/<id>.png')} />`.
 
 2. **Wikimedia Commons + bibliotecas SVG** — Brasões/bandeiras/símbolos oficiais via Wikimedia (PD/CC). Ícones genéricos via heroicons/lucide/tabler/svgrepo. Use `WebFetch`.
 
@@ -46,7 +46,7 @@ Gabriel usa ferramentas de geração de imagem (Midjourney, Flux, etc.). Os PNGs
 
 4. **SVG na mão = ÚLTIMO recurso** — Só pra formas geométricas puras (linhas, retângulos, gradientes, frames). **PROIBIDO** pra: figura humana, busto, balança, brasão oficial, animal, objeto reconhecível.
 
-**Por que essa regra existe (Gabriel, TriboTax 2026-05-12):** Geramos `scale_of_justice` em SVG cru → balança virou palitos + pratos retangulares. Geramos `stf_stamp` em SVG → brasão virou selo amador. Feedback explícito: "a balança ficou bem feia", "STF não ficou legal". O banco PNG tinha `blindfolded-statue-woman-spike-crown` (Lady Justice) e o brasão STF estava no Wikimedia — ambos pulados. **Erro repetido = falha grave.**
+**Por que essa regra existe (feedback de cliente, 2026-05-12):** Geramos `scale_of_justice` em SVG cru → balança virou palitos + pratos retangulares. Geramos `stf_stamp` em SVG → brasão virou selo amador. Feedback explícito: "a balança ficou bem feia", "STF não ficou legal". O banco PNG tinha `blindfolded-statue-woman-spike-crown` (Lady Justice) e o brasão STF estava no Wikimedia — ambos pulados. **Erro repetido = falha grave.**
 
 ## Padrão de extensão com `icon?` prop
 

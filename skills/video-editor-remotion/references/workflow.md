@@ -148,7 +148,7 @@ O `edit_plan.json` é o ponto de iteração central:
 
 ## Batch (CSV → N reels)
 
-Útil quando você tem N variações da mesma estrutura (50 reels Vhoe, um por aeronave):
+Útil quando você tem N variações da mesma estrutura (50 reels de aviação, um por aeronave):
 
 ```bash
 python ~/.claude/skills/video-editor-remotion/scripts/batch_data_driven.py \

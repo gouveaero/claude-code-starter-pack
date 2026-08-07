@@ -4,9 +4,9 @@ Generate many videos from a spreadsheet. One row = one reel. Each render gets th
 
 ## When to use
 
-- 50 Vhoe reels from `aeronaves.csv` (one per aircraft, swapping `glb`, `title`, `voice_src`, `narration_seconds`)
-- 20 TriboTax reels from `precedentes.csv` (one per legal precedent — different article number, court, ruling text)
-- 100 Telesapiens course-promo reels from a catalog
+- 50 aviation reels from `aeronaves.csv` (one per aircraft, swapping `glb`, `title`, `voice_src`, `narration_seconds`)
+- 20 tax-law reels from `precedentes.csv` (one per legal precedent — different article number, court, ruling text)
+- 100 course-promo reels from a catalog
 - 12 anniversary cards from a `customers.csv`
 
 ## How it works
@@ -15,7 +15,7 @@ Generate many videos from a spreadsheet. One row = one reel. Each render gets th
 2. **Build the Remotion project** once (`build_remotion.py`). The schema is now embedded; data only changes at render time.
 3. **Run `batch_data_driven.py`** with your data file. It calls `npx remotion render --props='{...}'` once per row, in parallel.
 
-## Example: Vhoe aeronaves.csv
+## Example: aviation aeronaves.csv
 
 ```csv
 slug,title,glb,voice_src,narration_seconds,brandColor,hookText

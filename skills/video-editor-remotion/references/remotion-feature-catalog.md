@@ -62,7 +62,7 @@ Complete map of Remotion primitives and packages, with explicit status: **USED**
 | `@remotion/media-utils` | ADDED | `useAudioData`, `visualizeAudio`, audio waveform extraction. | `AudioWaveform.tsx` |
 | `@remotion/lottie` | ADDED | Render Lottie/After Effects animations. | `LottieScene.tsx` |
 | `@remotion/rive` | ADDED | Render Rive `.riv` interactive vector animations. | `RiveScene.tsx` |
-| `@remotion/three` | ADDED | React Three Fiber 3D in video. Useful for Vhoe aircraft reveals, TriboTax 3D infographics. | `ThreeReveal.tsx` |
+| `@remotion/three` | ADDED | React Three Fiber 3D in video. Useful for aviation aircraft reveals, tax-law 3D infographics. | `ThreeReveal.tsx` |
 | `@remotion/skia` | AVAILABLE | High-perf 2D via Skia. Use for complex procedural drawing. | — |
 | `@remotion/shapes` | ADDED | SVG primitive shapes (circle, polygon, star, etc.). | `ShapeMorph.tsx` |
 | `@remotion/paths` | ADDED | SVG path manipulation, morphing, stroke animation. | `ShapeMorph.tsx` |

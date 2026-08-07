@@ -26,7 +26,7 @@ DaVinci Resolve project (color grading, longer-form)                →  /video-
 
 **Use `/video-editor` instead when**: a human editor will polish in CapCut afterward (the typical workflow for client deliverables that need final aesthetic decisions).
 
-**RELATED SKILLS:** [[vhoe-roteiro]] (input script for Vhoe reels), [[imagens-freepik]] (PNG generation), [[video-editor]] (sibling with CapCut deliverable), [[video-editor-davinci]] (sibling for DaVinci), [[carousel-generator]] (similar HTML→export paradigm).
+**RELATED SKILLS:** [[content-machine-pro]] (similar HTML→export paradigm, for carousels). Siblings that ship separately, not in this pack: `video-editor` (CapCut deliverable) and `video-editor-davinci` (DaVinci Resolve).
 
 ## Quick start
 
@@ -82,7 +82,7 @@ Plus optionally:
 - **"Render final without proxy approval"** → 5-30 min wasted render time if anything is wrong. Always check `proxy.mp4` first (unless `--autonomous`).
 - **"Underscore in Composition.id"** → render fails immediate. Use hyphens.
 - **"Symlink edit_plan.json → remotion/src/"** → webpack ignores symlinks. Use `cp`.
-- **"Draw SVG by hand for figura humana / balança / brasão"** → amateur output. Always PNG-first ([overlay-density.md](./references/overlay-density.md)). Hard rule from TriboTax 2026-05-12.
+- **"Draw SVG by hand for figura humana / balança / brasão"** → amateur output. Always PNG-first ([overlay-density.md](./references/overlay-density.md)). Hard rule from production feedback, 2026-05-12.
 - **"Invent a Remotion feature"** → consult [remotion-feature-catalog.md](./references/remotion-feature-catalog.md) first. If not there, propose existing alternative.
 - **"H.265 by default"** → Instagram + WhatsApp re-encode H.265 anyway; H.264 CRF 18 plays everywhere. H.265 only if file size matters.
 
@@ -245,6 +245,6 @@ Remotion-package-backed: `TransitionScene`, `AudioWaveform`, `LottieScene`, `Riv
 
 ## SFX library quick map
 
-Same library as parent skill: 26 categories at `/Users/gabriel/Documents/EFEITOS SONOROS/`, indexed in `assets/sfx_index.json`. **Use legacy UPPERCASE names in `edit_plan.json`**: `WOOSH`, `CLICK`, `DIGITAL`, `TRANSIÇÃO`, `CAMERA`, `PLIM`, `RISER`, `VARIAVEIS`, `AMBIENTE`, `CINEMATICA`, `ROLAGEM`, `GLITCH`, `TECLADO`, `DINHEIRO`, `ESTALO`, `CONTAGEM`, `POPS`, `BOOM`, `NOTIFICATION`, `DRUM`, `GLASS_BREAK`, `APPLAUSE`, `HORROR`, `FAIL`, `MAGIC`, `HEARTBEAT`.
+Same library as parent skill: 26 categories at `~/Documents/EFEITOS SONOROS/`, indexed in `assets/sfx_index.json`. **Use legacy UPPERCASE names in `edit_plan.json`**: `WOOSH`, `CLICK`, `DIGITAL`, `TRANSIÇÃO`, `CAMERA`, `PLIM`, `RISER`, `VARIAVEIS`, `AMBIENTE`, `CINEMATICA`, `ROLAGEM`, `GLITCH`, `TECLADO`, `DINHEIRO`, `ESTALO`, `CONTAGEM`, `POPS`, `BOOM`, `NOTIFICATION`, `DRUM`, `GLASS_BREAK`, `APPLAUSE`, `HORROR`, `FAIL`, `MAGIC`, `HEARTBEAT`.
 
 In this fork, SFX play via `<Audio>` tracks inside `Reel.tsx` — described above in [SFX in Remotion](#sfx-in-remotion-key-difference-from-capcut-sibling).

@@ -4,13 +4,13 @@ build_sfx_index.py — Utilitário video-editor
 Escaneia a pasta de efeitos sonoros e gera assets/sfx_index.json.
 
 Uso:
-  python build_sfx_index.py [--sfx-root "/Users/gabriel/Documents/EFEITOS SONOROS"]
+  python build_sfx_index.py [--sfx-root "~/Documents/EFEITOS SONOROS"]   # ou defina SFX_ROOT
                              [--output /path/to/sfx_index.json]
 """
 import argparse, json, subprocess, os
 from pathlib import Path
 
-SFX_ROOT_DEFAULT = "/Users/gabriel/Documents/EFEITOS SONOROS"
+SFX_ROOT_DEFAULT = os.path.expanduser(os.environ.get("SFX_ROOT", "~/Documents/EFEITOS SONOROS"))
 INDEX_DEFAULT = str(Path(__file__).parent.parent / "assets" / "sfx_index.json")
 
 # Metadados por categoria: descrição e use_cases

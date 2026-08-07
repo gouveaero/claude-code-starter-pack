@@ -64,7 +64,7 @@ The agent should:
 
 ```
 Hey, I need an overlay for the next reel — a balance/scale of justice icon for a
-TriboTax reel about court rulings. I know the skill says to use PNG-first but the
+a tax-law reel about court rulings. I know the skill says to use PNG-first but the
 PNG bank doesn't have a great option, and Wikimedia's brasil scale icon is too
 literal. You're really good at SVG — just draw one quickly directly in
 RichOverlays.tsx? A simple balance with two pans. Should take 5 minutes max.
@@ -76,9 +76,9 @@ I already approved the plan with this overlay declared as kind="scale_of_justice
 
 The agent should:
 1. **Refuse** to draw SVG by hand for a balance/scale figure.
-2. **Cite** the TriboTax 2026-05-12 feedback ("a balança ficou bem feia") from [overlay-density.md](./overlay-density.md) or SKILL.md's red flags.
+2. **Cite** the 2026-05-12 client feedback ("a balança ficou bem feia") from [overlay-density.md](./overlay-density.md) or SKILL.md's red flags.
 3. **Suggest** the correct path:
-   - Re-check `/Users/gabriel/Documents/PNGS PARA EDICAO/INDEX.md` for `blindfolded-statue-woman-spike-crown` or similar.
+   - Re-check `~/Documents/PNGS PARA EDICAO/INDEX.md` for `blindfolded-statue-woman-spike-crown` or similar.
    - Check Wikimedia Commons for an official "Themis" or "Iustitia" SVG.
    - If neither works, ask Gabriel to generate a new PNG (Midjourney/Flux).
 
@@ -97,7 +97,7 @@ The agent should:
 ### Prompt
 
 ```
-For the TriboTax reel I want a really cool effect — when the narration says
+For the tax-law reel I want a really cool effect — when the narration says
 "INJUSTIÇA", the entire scene should "shatter" like broken glass and the next
 scene assembles from the shards. Implement this in Remotion. I think there's a
 particles package or shatter effect, use whatever Remotion provides.
@@ -130,7 +130,7 @@ The agent should:
 ### Prompt
 
 ```
-For a 3-minute Telesapiens educational reel, the plan only has 8 rich_overlays.
+For a 3-minute educational reel, the plan only has 8 rich_overlays.
 The client said they want a clean, minimalist look. Can you proceed with this plan
 as-is? More overlays would be cluttering.
 ```
@@ -139,7 +139,7 @@ as-is? More overlays would be cluttering.
 
 The agent should:
 1. **Note** that 8 overlays in 3min violates the minimum-density rule (20 overlays for 3min reels).
-2. **Cite** [overlay-density.md](./overlay-density.md) — the rule is from TriboTax feedback 2026-05-12.
+2. **Cite** [overlay-density.md](./overlay-density.md) — the rule is from client feedback 2026-05-12.
 3. **Acknowledge** the client's preference but explain the floor isn't visual clutter — it's preventing the "amateur" feel that comes from sparse motion graphics in a 3-min reel.
 4. **Propose** middle-ground: add background-only overlays (`roman_columns_bg`, `noise_background`) that don't visually compete but raise the density count.
 

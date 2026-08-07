@@ -168,7 +168,7 @@ Shapes available: `circle`, `triangle`, `rect`, `star`, `polygon`.
 
 ## Combining surfaces
 
-Multiple surfaces can render at the same time — they live in different overlay tracks (V2, V3, V4...) handled by the greedy track-assignment in `capcut_draft_builder.py`. Example for Vhoe:
+Multiple surfaces can render at the same time — they live in different overlay tracks (V2, V3, V4...) handled by the greedy track-assignment in `capcut_draft_builder.py`. Example for an aviation reel:
 
 ```
 V1: cockpit footage (cuts)
@@ -189,4 +189,4 @@ A2: SFX (RISER, BOOM, AMBIENTE)
 ## See also
 
 - [remotion-feature-catalog.md](./remotion-feature-catalog.md) — packages reference
-- [data-driven-videos.md](./data-driven-videos.md) — generate 50 Vhoe reels each with different `.glb`
+- [data-driven-videos.md](./data-driven-videos.md) — generate 50 aviation reels each with different `.glb`

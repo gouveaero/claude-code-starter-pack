@@ -3,7 +3,7 @@
 preview_player.py — serve an embeddable Remotion <Player> for client approval.
 
 Creates a tiny static HTML page that mounts @remotion/player with the current
-reel composition. Useful for sharing a URL with the client (TriboTax, Telesapiens, etc.)
+reel composition. Useful for sharing a URL with the client
 to approve the reel BEFORE the final render — they get controls (play/pause/scrub)
 and can see the actual motion-graphics output without needing CapCut.
 

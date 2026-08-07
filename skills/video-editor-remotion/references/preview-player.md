@@ -6,7 +6,7 @@ Built on `@remotion/player` (the same React component that powers the Remotion l
 
 ## When to use
 
-- **Client approval gate** — TriboTax, Telesapiens, Vhoe stakeholders watch the reel and approve motion graphics + cuts before committing to final render.
+- **Client approval gate** — Client stakeholders watch the reel and approve motion graphics + cuts before committing to final render.
 - **Internal review on mobile** — your phone in fullscreen via the URL.
 - **Side-by-side comparison** — open two preview URLs in adjacent browser tabs to compare v1 vs v2.
 

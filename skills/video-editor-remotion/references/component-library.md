@@ -122,7 +122,7 @@ Embed Rive interactive vector animations (`.riv` files). Uses `@remotion/rive`.
 ## ThreeReveal.tsx (NEW)
 
 3D model rotation using `@remotion/three` + `@react-three/fiber` + `@react-three/drei`.
-For aircraft reveals (Vhoe), 3D infographics (TriboTax), product showcases.
+For aircraft reveals (aviation), 3D infographics (tax/legal), product showcases.
 See [3d-and-lottie.md](./3d-and-lottie.md).
 
 | prop | type | notes |
@@ -194,7 +194,7 @@ Available exports:
 Pure utilities, no React.
 
 - `classifyWord(word, emphasisWords?)` → `"keyword"|"emphasis"|"normal"`. Mirrors the davinci-skill regex (numbers, %, $, ★ → keyword; else lookup in `emphasisWords` set).
-- `DEFAULT_EMPHASIS_WORDS` — ready-made set with TriboTax-friendly tax/agro words. Pass a custom Set for other clients.
+- `DEFAULT_EMPHASIS_WORDS` — ready-made set with tax/agro words. Pass a custom Set for other clients.
 - `DEFAULT_BRAND_COLORS` — fallback when no brand config supplies colors.
 - `easings` — pre-built bezier curves (`outCubic`, `outBack`, `inOutQuad`, `punch`).
 - `getStartFrame(seconds, fps)`, `secondsToFrames(seconds, fps)` — both `Math.round`.

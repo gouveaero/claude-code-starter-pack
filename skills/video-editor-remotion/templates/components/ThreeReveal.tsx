@@ -10,8 +10,8 @@ import {
 import { ThreeCanvas } from "@remotion/three";
 import { useGLTF, OrbitControls, Environment } from "@react-three/drei";
 
-// ThreeReveal — 3D model rotating into view. Useful for Vhoe aircraft reveals,
-// TriboTax 3D infographics (pyramid of taxation), product showcases.
+// ThreeReveal — 3D model rotating into view. Useful for aviation aircraft reveals,
+// tax-law 3D infographics (pyramid of taxation), product showcases.
 //
 // Plan usage:
 //   { "kind": "three_reveal", "glb": "models/su-35.glb",

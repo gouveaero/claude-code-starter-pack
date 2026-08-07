@@ -10,7 +10,7 @@ import { useAudioData, visualizeAudio } from "@remotion/media-utils";
 
 // AudioWaveform — vertical bars reacting to the audio at the current frame.
 // Drives off the narration TTS or background music. Useful for music videos and
-// aviation reels (Vhoe — engine frequency visualization).
+// aviation reels (aviation — engine frequency visualization).
 //
 // Plan usage:
 //   { "kind": "audio_waveform", "audio_src": "voice.mp3", "bars": 48,

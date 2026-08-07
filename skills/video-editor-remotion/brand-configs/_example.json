@@ -82,7 +82,7 @@
 
   "sfx": {
     "enabled": true,
-    "sfx_index_path": "/Users/gabriel/.claude/skills/video-editor/assets/sfx_index.json",
+    "sfx_index_path": "~/.claude/skills/video-editor/assets/sfx_index.json",
     "default_volume_db": -10
   }
 }
