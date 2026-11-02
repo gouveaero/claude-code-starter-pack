@@ -65,7 +65,8 @@ Copiadas para `~/.claude/skills/`, onde carregam automaticamente. Selecionadas p
 |---|---|
 | **content-machine-pro** | Carrosséis de Instagram/LinkedIn com imagens de fundo, paleta derivada da marca e sem marca d'água. Pipeline editorial completo: briefing → headlines → espinha → texto → imagens → HTML 1080×1350 → PNG. |
 | **canva-presentation** | Apresentações Canva a partir de markdown, com playbook de animação. |
-| **video-editor-remotion** | Pipeline de vídeo 100% Remotion — renderiza o MP4 final sem editor externo. |
+| **editar-videos-com-fontes** | Edição de vídeos verticais falados para a câmera (TikTok/Reels): cortes naturais, ganchos alternativos, legendas queimadas, imagens de fonte/evidência, demos animadas e SFX. Inclui teste de regressão visual. |
+| **hyperframes** | Skill de entrada do HyperFrames: cria vídeos como composições HTML (explicadores, overlays, vídeos de produto/site/PR). Vem com as skills de domínio `hyperframes-core`, `-animation`, `-creative`, `-media`, `-cli` e `-registry`. |
 | **notebooklm** | API completa do Google NotebookLM — cria notebooks, fontes, podcasts e demais artefatos via API, incluindo o que não existe na UI web. |
 
 **Frontend**
@@ -80,7 +81,8 @@ Copiadas para `~/.claude/skills/`, onde carregam automaticamente. Selecionadas p
 Quase tudo roda sem configuração extra. As exceções, todas com degradação graciosa:
 
 - **content-machine-pro** — usa MCP de imagem (Higgsfield/Magnific) se existir. Sem nenhum, cai para imagens suas → Unsplash (`UNSPLASH_ACCESS_KEY`) → URL direta → modo Minimal (numeral + gradiente da marca). Entrega o carrossel de qualquer jeito. Para o export PNG: Playwright + Chromium.
-- **video-editor-remotion** — Node + Remotion. Bancos de SFX/PNG locais são opcionais e configuráveis (`SFX_ROOT`).
+- **editar-videos-com-fontes** — Python (`requirements.txt`) e ffmpeg. Bancos de SFX locais são opcionais. A fixture de regressão (`assets/benchmark`) não vem aqui: está no [repositório original](https://github.com/gouveaero/editar-videos-com-fontes).
+- **hyperframes** — Node e `npx hyperframes`; render exige ffmpeg.
 - **notebooklm** — CLI `notebooklm-py` (Python 3.10+). O uso via Cowork é um addendum opcional.
 
 ## Por que os essenciais não estão neste repo
@@ -103,7 +105,8 @@ claude-code-starter-pack/
     ├── dumbify/
     ├── content-machine-pro/
     ├── canva-presentation/
-    ├── video-editor-remotion/
+    ├── editar-videos-com-fontes/
+    ├── hyperframes/              # + hyperframes-core, -animation, -creative, -media, -cli, -registry
     ├── notebooklm/
     ├── impeccable/
     └── clone-website/
@@ -128,4 +131,4 @@ cp -R skills/* ~/.claude/skills/
 
 MIT — veja [LICENSE](LICENSE).
 
-A `impeccable` é Apache 2.0, derivada da skill `frontend-design` da Anthropic. A `notebooklm` embrulha o CLI de terceiros [`notebooklm-py`](https://github.com/teng-lin/notebooklm-py).
+A `impeccable` é Apache 2.0, derivada da skill `frontend-design` da Anthropic. As skills `hyperframes*` vêm do projeto [HyperFrames](https://github.com/heygen-com/hyperframes) (Apache 2.0). A `notebooklm` embrulha o CLI de terceiros [`notebooklm-py`](https://github.com/teng-lin/notebooklm-py).
